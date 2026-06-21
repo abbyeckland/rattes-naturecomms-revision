@@ -16,5 +16,5 @@ The two additional R scripts (**readin_lakecat_data.R** and **compute_wSAatdam.R
     - 3b. Run **2_MLR_predictions.R** with version "rattes_v1p2_3param_silt". 
 
 <u>Other notes:</u>
-- Upon running **MLR_toShare.R**, additional folders with figures, results dataframes, model summaries, etc will be automatically created. See the comments in the code for more details on these derivations.
+- Upon running the R scripts, additional folders with figures, results dataframes, model summaries, etc will be automatically created. See the comments in the code for more details on these derivations.
 - Zip files in folder "lakecat_data" must be unziped prior to running any code. The resulting csv files must be moved into the "lakecat_data" folder.
