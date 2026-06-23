@@ -1,0 +1,35 @@
+
+> mlr_usa_lsr_df_best_model_null_pca <- lm(formula_null, data = mlr_usa_lsr_df_best_null_pca)
+
+> print(summary(mlr_usa_lsr_df_best_model_null_pca))
+
+Call:
+lm(formula = formula_null, data = mlr_usa_lsr_df_best_null_pca)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.6047 -0.5518  0.0706  0.6167  3.5695 
+
+Coefficients:
+                                        Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                              4.64960    0.70937   6.555 9.43e-11 ***
+yrs_tot                                 -0.10049    0.05900  -1.703  0.08886 .  
+AveTrap                                  0.82738    0.10638   7.778 2.03e-14 ***
+wSAatdam                                 0.87003    0.01512  57.528  < 2e-16 ***
+wSAratio                                -0.58010    0.08100  -7.162 1.67e-12 ***
+pathx:indicator_pathx                    0.13722    0.02879   4.767 2.19e-06 ***
+PctColluvSedWs:indicator_PctColluvSedWs -0.06712    0.02355  -2.850  0.00447 ** 
+PctWaterWs:indicator_PctWaterWs          0.16469    0.07349   2.241  0.02527 *  
+wrt:indicator_wrt                        0.30180    0.03401   8.873  < 2e-16 ***
+fdar:indicator_fdar                      0.38752    0.04036   9.601  < 2e-16 ***
+pc_soil:indicator_pc_soil               -0.16242    0.03101  -5.238 2.03e-07 ***
+pc_temp_fcpg:indicator_pc_temp_fcpg     -0.17496    0.02251  -7.771 2.14e-14 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.9992 on 892 degrees of freedom
+Multiple R-squared:  0.8617,	Adjusted R-squared:   0.86 
+F-statistic: 505.4 on 11 and 892 DF,  p-value: < 2.2e-16
+
+
+> sink()

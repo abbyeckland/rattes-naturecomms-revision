@@ -1,0 +1,27 @@
+
+> mlr_usa_lsr_df_best_4_model <- lm(formula_4, data = mlr_usa_lsr_df_best_4)
+
+> print(summary(mlr_usa_lsr_df_best_4_model))
+
+Call:
+lm(formula = formula_4, data = mlr_usa_lsr_df_best_4)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.6362 -0.6544  0.0539  0.7304  4.3311 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)         -1.75717    0.33493  -5.246 1.94e-07 ***
+AveTrap              1.69749    0.07173  23.666  < 2e-16 ***
+wSAatdam             0.88959    0.01476  60.267  < 2e-16 ***
+fdar:indicator_fdar  0.08869    0.03212   2.761  0.00587 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.162 on 900 degrees of freedom
+Multiple R-squared:  0.8114,	Adjusted R-squared:  0.8108 
+F-statistic:  1291 on 3 and 900 DF,  p-value: < 2.2e-16
+
+
+> sink()
